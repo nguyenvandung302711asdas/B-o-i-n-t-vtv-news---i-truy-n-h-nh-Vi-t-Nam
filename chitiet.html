@@ -1,0 +1,339 @@
+<html>
+
+<head>
+    <title>VTV</title>
+    <link rel="stylesheet" type="text/css" href="css/chitiet.css" />
+    <script src="Js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="header">
+        <div style="width: 1140px; height: 100px;  margin: 0px auto; position: relative">
+            <div>
+                <div class="left" style="position: relative;">
+                    <img id="logo" src="https://vtv1.mediacdn.vn/web_images/logo_2020_2.png" alt="Logo" />
+                </div>
+                <div class="right">
+                    <!-- <a href="#" id="search-button" class="button" onclick="toggleSearch()">Search</a> -->
+
+                    <div style="padding-top: 1px;">
+                        <a href="#" id="search-button" onclick="toggleSearch()">
+                            <img src="image/search.png" alt="Search" class="button">
+                        </a>
+                        <a href="https://www.facebook.com/trung3802" id="fb-button">
+                            <img src="image/fb.png" alt="fb" class="button">
+                        </a>
+
+
+                    </div>
+                    <a href="#" id="watch-button" class="button">English</a>
+                    <a href="#" id="watch-button" class="button">📄 Cổng Thông Tin VTV</a>
+                    <a href="#" id="video-button" class="button">▶ TV & Video</a>
+                    <div id="search-box" style="display: none;">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <button onclick="performSearch()">Tìm</button>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- Tạo menu ngang 2 cấp -->
+            <div id="nav">
+                <ul>
+                    <li>
+                        <a href="index.html" rel="home" title="Trang chủ">
+                            <img src="image/home.png" alt="Trang chủ" />
+                        </a>
+                    </li>
+
+                    <li><a href="chinhtri.html">Chính Trị</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="xahoi.html">Xã Hội</a></li>
+                    <li><a href="phapluat.html">Pháp Luật</a></li>
+                    <li><a href="thegioi.html">Thế Giới</a></li>
+                    <li>
+                        <a href="thegioi.html">Thể Thao</a>
+                        <ul>
+                            <li><a href="#">Bóng Đá</a></li>
+                            <li><a href="#">Quần Vợt</a></li>
+                            <li><a href="#">Tennis</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="truyenhinh.html">Truyền Hình</a></li>
+                    <li><a href="kinhte.html">Kinh Tế</a></li>
+                    <li><a href="giaitri.html">Giải Trí</a></li>
+                    <li><a href="giaitri.html">Giáo Dục</a></li>
+                    <li><a href="doisong.html">Đời Sống</a>
+                        <ul>
+                            <li><a href="#">Điện Ảnh</a></li>
+                            <li><a href="#">Âm Nhạc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html" rel="home" title="menu">
+                            <img src="image/menu.png" alt="Menu" />
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <!--  xóa hoặc "xóa bỏ" bất kỳ dòng nào của nội dung trước đó mà có float -->
+
+    <div id="container">
+        <div id="scrollToTopBtn" onclick="scrollToTop()">Lên Đầu</div>
+        <div>
+            <nav style="width: 100px;
+            background-color: #fff; /* Màu nền */
+            position: fixed;
+            margin: 50px 0px 0px 50px;
+    padding: 9px;
+            top: 50px; /* Đặt khoảng cách 50px từ đỉnh trang */">
+                <div class="nav_right">
+                    <a href="#"><i class='bx bxs-hot'></i><br>TIN NÓNG<hr></a>
+                    <a href="#"><i class='bx bxs-video'></i><br>MEDIA<hr></a>
+                    <a href="#"><i class='bx bx-book-bookmark'></i><br>MAGAZINE<hr></a>
+                    <a href="#"><i class='bx bx-bar-chart-alt-2'></i><br>INFOGRAPHIC<hr></a>
+                    <a href="#"><i class='bx bxs-camera'></i><br>GÓC ẢNH<hr></a>
+                    <a href="#"><i class='bx bx-star' ></i><br>STAR<hr></a>
+                </div>
+
+            </nav>
+        </div>
+        <div class="container">
+            <div class="some">
+                <div class="right-section">
+                    <h1>Quy định tổ chức lễ động thổ, lễ khởi công và lễ khánh thành công trình</h1>
+                    <p>PV-Thứ năm, ngày 09/11/2023 07:16 GMT+7</p>
+                    <div class="avatar">
+                        <a href="#">
+                            <img src="image/blog/1.png">
+                        </a>
+                        <h4>VTV.vn - Ngày 8/11, Thủ tướng Chính phủ ban hành Quyết định số 27/2023/QĐ-TTg quy định tổ chức lễ động thổ, lễ khởi công và lễ khánh thành công trình.</h4>
+                    </div>
+                    <div class="noibat1_info" style="font-size: 20px;">
+                        <p class="sapo">VTV.vn - Thời gian qua, Chính phủ đã quyết liệt chỉ đạo triển khai các dự án giao thông trọng điểm, quan trọng quốc gia, gồm 36 dự án với 83 dự án thành phần.</p>
+                        <p>Quyết định này áp dụng đối với cơ quan, tổ chức, cá nhân có liên quan đến việc sử dụng ngân sách nhà nước, vốn hỗ trợ phát triển chính thức (ODA), vốn vay ưu đãi của nhà tài
+                        </p><br> trợ nước ngoài, để tổ chức lễ động thổ, lễ khởi công và lễ khánh thành công trình.<br><b>Điều kiện tổ chức lễ động thổ, lễ khởi công và lễ khánh thành công trình</b> Lễ động thổ <br>công trình được thực hiện khi: Chủ đầu
+                        tư hoặc cơ quan, tổ chức được giao nhiệm vụ chuẩn bị dự án (sau đây gọi tắt là chủ đầu tư) được cơ quan có thẩm quyền bàn giao mặt bằng hoặc bàn giao mặt bằng theo từng giai đoạn và dự án <br>đã được phê duyệt theo đúng thẩm quyền
+                        và quy định. Lễ khởi công công trình được tiến hành khi đáp ứng yêu cầu về điều kiện khởi công theo quy định tại khoản 1 Điều 107 Luật Xây dựng được sửa đổi, bổ sung tại khoản 39 Điều 1 Luật số <br>62/2020/QH14. Lễ khánh thành
+                        được thực hiện sau khi công trình được cơ quan nhà nước có thẩm quyền kiểm tra công tác nghiệm thu, đáp ứng yêu cầu theo quy định. Dự án được tổ chức một lần lễ động thổ hoặc lễ khởi công và <br>một lần lễ khánh thành công trình.
+                        Thẩm quyền quyết định tổ chức các buổi lễ Thủ tướng Chính phủ quyết định tổ chức các buổi lễ đối với Công trình quan trọng quốc gia là công trình chính thuộc dự án quan trọng quốc gia theo <br>quy định của Luật Đầu tư công trên
+                        cơ sở đề nghị của cơ quan nhà nước có thẩm quyền hoặc chủ đầu tư. Người đứng đầu bộ, cơ quan trung ương chủ trì, phối hợp với Chủ tịch UBND cấp tỉnh quyết định tổ chức các buổi lễ đối với công <br>trình do mình quyết định đầu tư
+                        như công trình có giá trị lớn, có ý nghĩa quan trọng về kinh tế, chính trị, văn hóa, xã hội của địa phương là công trình chính thuộc dự án nhóm A theo quy định của Luật Đầu tư công và có ý nghĩa <br>quan trọng về kinh tế, chính
+                        trị, văn hóa, xã hội của địa phương. Chủ tịch UBND cấp tỉnh quyết định tổ chức các buổi lễ đối với công trình do mình quyết định đầu tư như công trình có giá trị lớn, có ý nghĩa quan trọng về kinh tế,<br> chính trị, văn hóa, xã
+                        hội của địa phương là công trình chính thuộc dự án nhóm A theo quy định của Luật Đầu tư công và có ý nghĩa quan trọng về kinh tế, chính trị, văn hóa, xã hội của địa phương. Chủ đầu tư lập kế hoạch tổ chức <br>buổi lễ, trong đó
+                        nêu rõ: Nội dung, thời gian, địa điểm, thành phần, chi phí, phương án tiến hành; trình cấp có thẩm quyền quyết định. Chủ đầu tư không được yêu cầu nhà thầu thanh toán chi phí cho tổ chức các buổi lễ Quyết định<br> quy định chi
+                        phí tổ chức buổi lễ được tính vào tổng mức đầu tư của dự án. Theo đó, trên cơ sở cho phép tổ chức buổi lễ của người có thẩm quyền thì chủ đầu tư lập, phê duyệt dự toán chi phí cho từng buổi lễ. Dự toán chi phí cho<br> tổ chức buổi
+                        lễ được lập phù hợp với nội dung và quy mô của công trình, theo định mức, tiêu chuẩn, chế độ hiện hành của Nhà nước. Chủ đầu tư không được yêu cầu nhà thầu thanh toán chi phí cho tổ chức các buổi lễ.</p>
+                    </div>
+                    <div class="noibat1_info" style="font-size: 20px;">
+                        <p>Quyết định này áp dụng đối với cơ quan, tổ chức, cá nhân có liên quan đến việc sử dụng ngân sách nhà nước, vốn hỗ trợ phát triển chính thức (ODA), vốn vay ưu đãi của nhà <br>tài trợ nước ngoài, để tổ chức lễ động thổ, lễ khởi công
+                            và lễ khánh thành công trình. Điều kiện tổ chức lễ động thổ, lễ khởi công và lễ khánh thành công trình Lễ động thổ công trình được thực hiện khi: Chủ đầu tư hoặc cơ <br>quan, tổ chức được giao nhiệm vụ chuẩn bị dự án (sau đây
+                            gọi tắt là chủ đầu tư) được cơ quan có thẩm quyền bàn giao mặt bằng hoặc bàn giao mặt bằng theo từng giai đoạn và dự án đã được phê duyệt theo đúng thẩm quyền và quy<br> định. Lễ khởi công công trình được tiến hành khi đáp
+                            ứng yêu cầu về điều kiện khởi công theo quy định tại khoản 1 Điều 107 Luật Xây dựng được sửa đổi, bổ sung tại khoản 39 Điều 1 Luật số 62/2020/QH14. Lễ khánh thành được thực<br> hiện sau khi công trình được cơ quan nhà nước
+                            có thẩm quyền kiểm tra công tác nghiệm thu, đáp ứng yêu cầu theo quy định. Dự án được tổ chức một lần lễ động thổ hoặc lễ khởi công và một lần lễ khánh thành công trình. Thẩm <br>quyền quyết định tổ chức các buổi lễ Thủ tướng
+                            Chính phủ quyết định tổ chức các buổi lễ đối với Công trình quan trọng quốc gia là công trình chính thuộc dự án quan trọng quốc gia theo quy định của Luật Đầu tư công trên cơ <br>sở đề nghị của cơ quan nhà nước có thẩm quyền
+                            hoặc chủ đầu tư. Người đứng đầu bộ, cơ quan trung ương chủ trì, phối hợp với Chủ tịch UBND cấp tỉnh quyết định tổ chức các buổi lễ đối với công trình do mình quyết định đầu<br> tư như công trình có giá trị lớn, có ý nghĩa quan
+                            trọng về kinh tế, chính trị, văn hóa, xã hội của địa phương là công trình chính thuộc dự án nhóm A theo quy định của Luật Đầu tư công và có ý nghĩa quan trọng về<br> kinh tế, chính trị, văn hóa, xã hội của địa phương. Chủ tịch
+                            UBND cấp tỉnh quyết định tổ chức các buổi lễ đối với công trình do mình quyết định đầu tư như công trình có giá trị lớn, có ý nghĩa quan trọng về kinh tế, <br>chính trị, văn hóa, xã hội của địa phương là công trình chính thuộc
+                            dự án nhóm A theo quy định của Luật Đầu tư công và có ý nghĩa quan trọng về kinh tế, chính trị, văn hóa, xã hội của địa phương. Chủ đầu tư lập kế hoạch tổ chức buổ<br>i lễ, trong đó nêu rõ: Nội dung, thời gian, địa điểm, thành
+                            phần, chi phí, phương án tiến hành; trình cấp có thẩm quyền quyết định. Chủ đầu tư không được yêu cầu nhà thầu thanh toán chi phí cho tổ chức các buổi lễ Quyết <br>định quy định chi phí tổ chức buổi lễ được tính vào tổng mức
+                            đầu tư của dự án. Theo đó, trên cơ sở cho phép tổ chức buổi lễ của người có thẩm quyền thì chủ đầu tư lập, phê duyệt dự toán chi phí cho từng buổi lễ. Dự toán<br> chi phí cho tổ chức buổi lễ được lập phù hợp với nội dung và
+                            quy mô của công trình, theo định mức, tiêu chuẩn, chế độ hiện hành của Nhà nước. Chủ đầu tư không được yêu cầu nhà thầu thanh toán chi phí cho tổ chức các buổi lễ.</p>
+                    </div>
+                    <div class="avatar">
+                        <a href="#">
+                            <img src="image/blog/1.png">
+                        </a>
+                        <h4>VTV.vn - Ngày 8/11, Thủ tướng Chính phủ ban hành Quyết định số 27/2023/QĐ-TTg quy định tổ chức lễ động thổ, lễ khởi công và lễ khánh thành công trình.</h4>
+                    </div>
+                    <div class="noibat1_info" style="font-size: 20px;">
+                        <p>Quyết định này áp dụng đối với cơ quan, tổ chức, cá nhân có liên quan đến việc sử dụng ngân sách nhà nước, vốn hỗ trợ phát triển chính thức (ODA), vốn vay ưu đãi của nhà <br>tài trợ nước ngoài, để tổ chức lễ động thổ, lễ khởi công
+                            và lễ khánh thành công trình. Điều kiện tổ chức lễ động thổ, lễ khởi công và lễ khánh thành công trình Lễ động thổ công trình được thực hiện khi: Chủ đầu tư hoặc cơ <br>quan, tổ chức được giao nhiệm vụ chuẩn bị dự án (sau đây
+                            gọi tắt là chủ đầu tư) được cơ quan có thẩm quyền bàn giao mặt bằng hoặc bàn giao mặt bằng theo từng giai đoạn và dự án đã được phê duyệt theo đúng thẩm quyền và quy<br> định. Lễ khởi công công trình được tiến hành khi đáp
+                            ứng yêu cầu về điều kiện khởi công theo quy định tại khoản 1 Điều 107 Luật Xây dựng được sửa đổi, bổ sung tại khoản 39 Điều 1 Luật số 62/2020/QH14. Lễ khánh thành được thực<br> hiện sau khi công trình được cơ quan nhà nước
+                            có thẩm quyền kiểm tra công tác nghiệm thu, đáp ứng yêu cầu theo quy định. Dự án được tổ chức một lần lễ động thổ hoặc lễ khởi công và một lần lễ khánh thành công trình. Thẩm <br>quyền quyết định tổ chức các buổi lễ Thủ tướng
+                            Chính phủ quyết định tổ chức các buổi lễ đối với Công trình quan trọng quốc gia là công trình chính thuộc dự án quan trọng quốc gia theo quy định của Luật Đầu tư công trên cơ <br>sở đề nghị của cơ quan nhà nước có thẩm quyền
+                            hoặc chủ đầu tư. Người đứng đầu bộ, cơ quan trung ương chủ trì, phối hợp với Chủ tịch UBND cấp tỉnh quyết định tổ chức các buổi lễ đối với công trình do mình quyết định đầu<br> tư như công trình có giá trị lớn, có ý nghĩa quan
+                            trọng về kinh tế, chính trị, văn hóa, xã hội của địa phương là công trình chính thuộc dự án nhóm A theo quy định của Luật Đầu tư công và có ý nghĩa quan trọng về<br> kinh tế, chính trị, văn hóa, xã hội của địa phương. Chủ tịch
+                            UBND cấp tỉnh quyết định tổ chức các buổi lễ đối với công trình do mình quyết định đầu tư như công trình có giá trị lớn, có ý nghĩa quan trọng về kinh tế, <br>chính trị, văn hóa, xã hội của địa phương là công trình chính thuộc
+                            dự án nhóm A theo quy định của Luật Đầu tư công và có ý nghĩa quan trọng về kinh tế, chính trị, văn hóa, xã hội của địa phương. Chủ đầu tư lập kế hoạch tổ chức buổ<br>i lễ, trong đó nêu rõ: Nội dung, thời gian, địa điểm, thành
+                            phần, chi phí, phương án tiến hành; trình cấp có thẩm quyền quyết định. Chủ đầu tư không được yêu cầu nhà thầu thanh toán chi phí cho tổ chức các buổi lễ Quyết <br>định quy định chi phí tổ chức buổi lễ được tính vào tổng mức
+                            đầu tư của dự án. Theo đó, trên cơ sở cho phép tổ chức buổi lễ của người có thẩm quyền thì chủ đầu tư lập, phê duyệt dự toán chi phí cho từng buổi lễ. Dự toán<br> chi phí cho tổ chức buổi lễ được lập phù hợp với nội dung và
+                            quy mô của công trình, theo định mức, tiêu chuẩn, chế độ hiện hành của Nhà nước. Chủ đầu tư không được yêu cầu nhà thầu thanh toán chi phí cho tổ chức các buổi lễ.</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="some">
+
+                <div class="right-section">
+                    <div class="avatar">
+                        <a href="#">
+                            <img src="image/blog/1.png">
+                        </a>
+                    </div>
+                    <div class="noibat1_info">
+                        <h2>
+                            <a href="#">Thủ tướng: Phấn đấu đến cuối nhiệm kỳ hoàn thành ít nhất 3.000 km đường cao tốc</a>
+                        </h2>
+                        <p class="sapo">VTV.vn - Thời gian qua, Chính phủ đã quyết liệt chỉ đạo triển khai các dự án giao thông trọng điểm, quan trọng quốc gia, gồm 36 dự án với 83 dự án thành phần.</p>
+                    </div>
+
+
+                </div>
+                <div class="left-section">
+                    <div class="noibat2">
+                        <ul>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="image/blog/7.jpg" alt="Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long">
+                                </a>
+                                <h3><a href="#">Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long</a></h3>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="image/blog/6.jpg" alt="Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long">
+                                </a>
+                                <h3><a href="#">Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div>
+            <ul>
+                <li class="tlitem">
+                    <a href="chitiet.html">
+                        <img src="image/blog/3.jpg" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
+                    </a>
+                    <div>
+                        <h3><a href="chitiet.html">Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra</a></h3>
+                        <p class="time"><a href="chitiet.html">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
+                            <span>07/11/2023</span>
+                        </p>
+                        <p class="sapo">VTV.vn - Nhiều người hâm mộ quyết định cắm trại trước sân vân động tại Argentina với hy vọng giành được những vị trí đẹp nhất cho buổi biểu diễn của Taylor Swift.</p>
+
+                    </div>
+                </li>
+                <li class="tlitem">
+                    <a href="chitiet.html">
+                        <img src="image/blog/2.jpg" alt="3 thành phố Việt Nam là điểm đến ''du mục kỹ thuật số''">
+                    </a>
+                    <div>
+                        <h3><a href="chitiet.html">3 thành phố Việt Nam là điểm đến ''du mục kỹ thuật số''</a></h3>
+                        <p class="time"><a href="chitiet.html">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
+                            <span>07/11/2023</span>
+                        </p>
+                        <p class="sapo">VTV.vn - Hà Nội, Đà Nẵng, TP. Hồ Chí Minh là 3 thành phố của Việt Nam đã lọt vào nhóm 10 điểm đến "du mục kỹ thuật số" phát triển nhanh nhất thế giới.</p>
+
+                    </div>
+                </li>
+                <li class="tlitem">
+                    <a href="chitiet.html">
+                        <img src="image/blog/1.jpg" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
+                    </a>
+                    <div>
+                        <h3><a href="chitiet.html">Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra</a></h3>
+                        <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
+                            <span>07/11/2023</span>
+                        </p>
+                        <p class="sapo">VTV.vn - Nhiều người hâm mộ quyết định cắm trại trước sân vân động tại Argentina với hy vọng giành được những vị trí đẹp nhất cho buổi biểu diễn của Taylor Swift.</p>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+
+    <div style="clear: both"></div>
+
+    <div id="footer">
+
+        <div id="tren">
+            <div style="width: 1140px; height: 340px; margin: 0px auto; color: #FFF; display: flex; ">
+                <div class="info">
+
+                    <ul style="list-style: none">
+                        <li><a href="#">CƠ QUAN CHỦ QUẢN: <b>ĐÀI TRUYỀN HÌNH VIỆT NAM</b></a></li>
+                        <li><a href="#">CƠ QUAN BÁO CHÍ: <b>ÁO ĐIỆN TỬ VTV NEWS</b></a></li>
+                        <li><a href="#">Giấy phép hoạt động báo chí điện tử số 306/GP-BTTTT cấp ngày 22/02/2012.
+                            ® Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản. Ghi rõ nguồn VTV.vn khi phát hành lại thông tin từ website này</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul style="list-style: none">
+                        <li><a href="index.html"><b>Tổng Biên tập: Vũ Thanh Thủy</b></a></li>
+                        <li><a href="SanPham.html"><b>Phó Tổng Biên tập: Phạm Quốc Thắng</b></a></li>
+                        <li><a href="GioiThieu.html">Tổng đài VTV: (024) 3.8355931; (024) 3.8355932</a></li>
+                        <li><a href="TinTuc.html">Ðiện thoại Báo điện tử VTV: (024) 66897 897</a></li>
+                        <li><a href="KhuyenMai.html">Email: toasoan @ vtv.vn</a></li>
+                        <li><a href="LienHe.html">Liên hệ quảng cáo: 0794 46 33 33 - 0961 98 43 88</a></li>
+                        <li><a href="#">Chính Sách</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul style="list-style: none">
+                        <li><a href="#">VFC</a></li>
+                        <li><a href="#">VTVVTC</a></li>
+                        <li><a href="#">CTV</a></li>
+                        <li><a href="#">K+</a></li>
+                        <li><a href="#">TVAd</a></li>
+                        <li><a href="#">SCTV</a></li>
+                        <li><a href="#">VTVCab</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div id="duoi">
+                <div id="copyright">
+                    <span>@ Bản quyền thuộc về VTV</span>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

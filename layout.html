@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <title>VTV</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="Js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="header">
+        <div style="width: 1140px; height: 100px;  margin: 0px auto; position: relative">
+            <div>
+                <div class="left" style="position: relative;">
+                    <img id="logo" src="https://vtv1.mediacdn.vn/web_images/logo_2020_2.png" alt="Logo" />
+                </div>
+                <div class="right">
+                    <!-- <a href="#" id="search-button" class="button" onclick="toggleSearch()">Search</a> -->
+
+                    <div style="padding-top: 1px;">
+                        <a href="#" id="search-button" onclick="toggleSearch()">
+                            <img src="image/search.png" alt="Search" class="button">
+                        </a>
+                        <a href="https://www.facebook.com/trung3802" id="fb-button">
+                            <img src="image/fb.png" alt="fb" class="button">
+                        </a>
+                    </div>
+                    <a href="#" id="watch-button" class="button">English</a>
+                    <a href="#" id="watch-button" class="button">📄 Cổng Thông Tin VTV</a>
+                    <a href="#" id="video-button" class="button">▶ TV & Video</a>
+                    <div id="search-box" style="display: none;">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <button onclick="performSearch()">Tìm</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tạo menu ngang 2 cấp -->
+            <div id="nav">
+                <ul>
+                    <li>
+                        <a href="index.html" rel="home" title="Trang chủ">
+                            <img src="image/home.png" alt="Trang chủ" />
+                        </a>
+                    </li>
+                    <li><a href="chinhtri.html">Chính Trị</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="xahoi.html">Xã Hội</a></li>
+                    <li><a href="phapluat.html">Pháp Luật</a></li>
+                    <li><a href="thegioi.html">Thế Giới</a></li>
+                    <li>
+                        <a href="thegioi.html">Thể Thao</a>
+                        <ul>
+                            <li><a href="#">Bóng Đá</a></li>
+                            <li><a href="#">Quần Vợt</a></li>
+                            <li><a href="#">Tennis</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="truyenhinh.html">Truyền Hình</a></li>
+                    <li><a href="kinhte.html">Kinh Tế</a></li>
+                    <li><a href="giaitri.html">Giải Trí</a></li>
+                    <li><a href="giaitri.html">Giáo Dục</a></li>
+                    <li><a href="doisong.html">Đời Sống</a>
+                        <ul>
+                            <li><a href="#">Điện Ảnh</a></li>
+                            <li><a href="#">Âm Nhạc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html" rel="home" title="menu">
+                            <img src="image/menu.png" alt="Menu" />
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <!--  xóa hoặc "xóa bỏ" bất kỳ dòng nào của nội dung trước đó mà có float -->
+
+    <div id="container" style="height: 700px;">
+        <div id="scrollToTopBtn" onclick="scrollToTop()">Lên Đầu</div>
+
+        <div class="centered-image">
+            <img src="image/ads/1.gif" alt="Mô tả hình ảnh" width="567" height="140">
+            <img src="image/ads/1.jpeg" alt="Mô tả hình ảnh" width="567" height="140">
+
+        </div>
+
+        <div>
+            <nav style="width: 100px;
+            background-color: #fff; /* Màu nền */
+            position: fixed;
+            margin: 50px 0px 0px 50px;
+    padding: 9px;
+            top: 50px; /* Đặt khoảng cách 50px từ đỉnh trang */">
+                <div class="nav_right">
+                    <a href="#"><i class='bx bxs-hot'></i><br>TIN NÓNG<hr></a>
+                    <a href="#"><i class='bx bxs-video'></i><br>MEDIA<hr></a>
+                    <a href="#"><i class='bx bx-book-bookmark'></i><br>MAGAZINE<hr></a>
+                    <a href="#"><i class='bx bx-bar-chart-alt-2'></i><br>INFOGRAPHIC<hr></a>
+                    <a href="#"><i class='bx bxs-camera'></i><br>GÓC ẢNH<hr></a>
+                    <a href="#"><i class='bx bx-star' ></i><br>STAR<hr></a>
+                </div>
+
+            </nav>
+        </div>
+
+
+
+
+    </div>
+
+    <div style="clear: both"></div>
+
+    <div id="footer">
+
+        <div id="tren">
+            <div style="width: 1140px; height: 340px; margin: 0px auto; color: #FFF; display: flex; ">
+                <div class="info">
+
+                    <ul style="list-style: none">
+                        <li><a href="#">CƠ QUAN CHỦ QUẢN: <b>ĐÀI TRUYỀN HÌNH VIỆT NAM</b></a></li>
+                        <li><a href="#">CƠ QUAN BÁO CHÍ: <b>ÁO ĐIỆN TỬ VTV NEWS</b></a></li>
+                        <li><a href="#">Giấy phép hoạt động báo chí điện tử số 306/GP-BTTTT cấp ngày 22/02/2012.
+                            ® Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản. Ghi rõ nguồn VTV.vn khi phát hành lại thông tin từ website này</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul style="list-style: none">
+                        <li><a href="index.html"><b>Tổng Biên tập: Vũ Thanh Thủy</b></a></li>
+                        <li><a href="SanPham.html"><b>Phó Tổng Biên tập: Phạm Quốc Thắng</b></a></li>
+                        <li><a href="GioiThieu.html">Tổng đài VTV: (024) 3.8355931; (024) 3.8355932</a></li>
+                        <li><a href="TinTuc.html">Ðiện thoại Báo điện tử VTV: (024) 66897 897</a></li>
+                        <li><a href="KhuyenMai.html">Email: toasoan @ vtv.vn</a></li>
+                        <li><a href="LienHe.html">Liên hệ quảng cáo: 0794 46 33 33 - 0961 98 43 88</a></li>
+                        <li><a href="#">Chính Sách</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul style="list-style: none">
+                        <li><a href="#">VFC</a></li>
+                        <li><a href="#">VTVVTC</a></li>
+                        <li><a href="#">CTV</a></li>
+                        <li><a href="#">K+</a></li>
+                        <li><a href="#">TVAd</a></li>
+                        <li><a href="#">SCTV</a></li>
+                        <li><a href="#">VTVCab</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div id="duoi">
+                <div id="copyright">
+                    <span>@ Bản quyền thuộc về VTV</span>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
