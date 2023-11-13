@@ -57,7 +57,7 @@ ul {
 }
 
 #nav ul li {
-    background-color: #b12a1e;
+    /* background-color: #b12a1e; */
     float: left;
     position: relative;
 }
@@ -741,4 +741,22 @@ nav hr {
 
 .info-a a:hover {
     color: #0056b3;
+}
+
+
+#dropdown-menu {
+    list-style: none;/* bỏ chấm ul li */
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    background-color: #fff;
+    display: none;
+    
+  border: 1px solid #cfcfcf;
+}
+
+#dropdown-menu.active {
+    display: block;
 }

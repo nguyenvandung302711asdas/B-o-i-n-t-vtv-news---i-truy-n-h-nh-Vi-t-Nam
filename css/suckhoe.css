@@ -8,8 +8,8 @@ body {
 #header {
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid #d82323;
-    background-color: #d82323;
+    border-bottom: 1px solid #2abcce;
+    background-color: #2abcce;
 }
 
 *,
@@ -57,7 +57,7 @@ ul {
 }
 
 #nav ul li {
-    background-color: #b12a1e;
+    background-color: #2abcce;
     float: left;
     position: relative;
 }
@@ -284,7 +284,7 @@ li.tlitem {
 .button {
     display: inline-block;
     padding: 5px 15px;
-    background-color: #d82323;
+    background-color: #2abcce;
     /* Màu nền */
     color: #fff;
     /* Màu chữ */

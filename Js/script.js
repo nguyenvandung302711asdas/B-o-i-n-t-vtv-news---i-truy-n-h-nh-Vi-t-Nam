@@ -38,3 +38,21 @@ function performSearch() {
     // Thực hiện tìm kiếm ở đây
     alert("Đã tìm kiếm: " + document.querySelector("#search-box input").value);
 }
+
+
+// menudown
+function toggleMenu(icon) {
+    const menu = document.getElementById('dropdown-menu');
+    const userIcon = document.getElementById('user-icon');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (icon === 'user') {
+        menu.classList.remove('active');
+        userIcon.classList.add('active');
+        menuIcon.classList.remove('active');
+    } else if (icon === 'menu') {
+        menu.classList.toggle('active');
+        userIcon.classList.remove('active');
+        menuIcon.classList.add('active');
+    }
+}
