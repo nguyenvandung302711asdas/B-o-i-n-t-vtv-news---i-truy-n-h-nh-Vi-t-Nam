@@ -10,6 +10,9 @@ body {
     height: 80px;
     border-bottom: 1px solid #2abcce;
     background-color: #2abcce;
+    position: sticky;
+    top:0px;
+    z-index: 9999999;
 }
 
 *,

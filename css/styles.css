@@ -10,6 +10,9 @@ body {
     height: 80px;
     border-bottom: 1px solid #d82323;
     background-color: #d82323;
+    position: sticky;
+    top:0px;
+    z-index: 9999999;
 }
 
 *,
@@ -24,9 +27,9 @@ a {
     display: block;
 }
 
-a:hover {
+/* a:hover {
     color: #f94e3f;
-}
+} */
 
 ul {
     list-style: none;
@@ -272,7 +275,6 @@ li.tlitem {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    background-color: #007bff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -432,10 +434,10 @@ li.tlitem {
     color: #000;
 }
 
-.h-title a:hover {
+/* .h-title a:hover {
     text-decoration: underline;
     color: #FF0000;
-}
+} */
 
 .th-title {
     list-style: none;
@@ -486,11 +488,12 @@ nav hr {
 
 .nav_right a {
     color: #5f5b5b;
+    font-size: 10px;
 }
 
-.nav_right a:hover {
+/* .nav_right a:hover {
     color: #a30606;
-}
+} */
 
 
 /* Trang trí phần tử mẹ, ở đây là .container */
@@ -567,19 +570,14 @@ nav hr {
 .some a {
     text-decoration: none;
     /* Loại bỏ gạch chân mặc định */
-    color: #0077FF;
+    color: black;
     /* Đặt màu chữ mặc định (ví dụ: màu xanh dương) */
 }
 
 
 /* Trang trí thẻ a khi di chuột qua */
 
-.some a:hover {
-    text-decoration: underline;
-    /* Gạch chân khi di chuột qua */
-    color: #FF0000;
-    /* Đặt màu chữ khi di chuột qua (ví dụ: màu đỏ) */
-}
+
 
 .top-tk {
     flex: 2;
@@ -741,4 +739,31 @@ nav hr {
 
 .info-a a:hover {
     color: #0056b3;
+}
+.itemimg {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid #ebe7e7;
+
+}
+
+.itemimg div {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.itemimg .content {
+    flex-grow: 1;
+}
+
+.avatar {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.avatar img {
+    max-width: 70%;
+    height: auto;
+    padding: 10px;
 }
