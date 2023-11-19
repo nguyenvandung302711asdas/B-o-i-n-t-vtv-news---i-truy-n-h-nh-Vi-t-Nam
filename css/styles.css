@@ -25,7 +25,9 @@ a {
     text-decoration: none;
     color: #FFF;
     display: block;
+
 }
+
 
 /* a:hover {
     color: #f94e3f;
@@ -410,6 +412,10 @@ li.tlitem {
     border-radius: 50%;
     /* Làm cho các nút tròn */
 }
+#anh:hover{
+    background-color: rgb(173, 179, 0);
+
+}
 
 
 /* Tùy chỉnh kiểu của thanh tua video */
@@ -454,7 +460,7 @@ li.tlitem {
     display: inline-block;
     text-align: center;
     padding: 5px 10px;
-    background-color: #b2b5b8;
+    background-color: #fcfcfc;
     color: #0c0a0a;
     border-radius: 20px;
     text-decoration: none;
@@ -464,9 +470,10 @@ li.tlitem {
     display: inline-flex;
     align-items: center;
     padding: 5px;
-    background-color: #b2b5b8;
+    background-color: #fdfeff;
     color: #0f0d0d;
     text-decoration: none;
+    border: 1px solid black;
 }
 
 
@@ -517,7 +524,7 @@ nav hr {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f5f5f5;
-    width: 76%;
+    width: 60%;
     /* Điều chỉnh chiều rộng theo nhu cầu */
 }
 
@@ -545,6 +552,7 @@ nav hr {
 .avatar img {
     max-width: 100%;
     height: auto;
+
 }
 
 
@@ -633,9 +641,9 @@ nav hr {
 }
 
 .mostviewleft img {
-    max-width: 40%;
+    /* max-width: 40%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10px; */
     max-height: 150px;
 }
 
@@ -662,7 +670,7 @@ nav hr {
 
 .mostviewleft a,
 .mostviewright a {
-    color: #007bff;
+    color: #090909;
     text-decoration: none;
     font-size: 10px;
 }
@@ -763,7 +771,10 @@ nav hr {
 }
 
 .avatar img {
-    max-width: 70%;
-    height: auto;
+    /* //max-width: 80%; */
+    /* height: auto; */
     padding: 10px;
+    height: fit-content;
 }
+
+

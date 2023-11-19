@@ -9,11 +9,11 @@ function scrollFunction() {
     } else {
         document.getElementById("scrollToTopBtn").style.display = "none";
     }
-} // hiển thị ra nút
+} // hiển thị ra nút    
 
 function scrollToTop() {
     const scrollDuration = 1000; // Thời gian để cuộn lên (1 giây)
-    const scrollStep = -window.scrollY / (scrollDuration / 15);
+    const scrollStep = -window.scrollY / (scrollDuration / 30);
 
     const scrollInterval = setInterval(function() {
         if (window.scrollY != 0) {
@@ -34,25 +34,3 @@ function toggleSearch() {
     }
 }
 
-function performSearch() {
-    // Thực hiện tìm kiếm ở đây
-    alert("Đã tìm kiếm: " + document.querySelector("#search-box input").value);
-}
-
-
-// menudown
-function toggleMenu(icon) {
-    const menu = document.getElementById('dropdown-menu');
-    const userIcon = document.getElementById('user-icon');
-    const menuIcon = document.getElementById('menu-icon');
-
-    if (icon === 'user') {
-        menu.classList.remove('active');
-        userIcon.classList.add('active');
-        menuIcon.classList.remove('active');
-    } else if (icon === 'menu') {
-        menu.classList.toggle('active');
-        userIcon.classList.remove('active');
-        menuIcon.classList.add('active');
-    }
-}

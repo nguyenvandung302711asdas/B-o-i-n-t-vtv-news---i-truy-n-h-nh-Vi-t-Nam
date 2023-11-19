@@ -1,0 +1,328 @@
+<html>
+
+<head>
+    <title>VTV</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="Js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="header">
+        <div style="width: 1140px; height: 100px;  margin: 0px auto; position: relative">
+            <div>
+                <div class="left" style="position: relative;">
+                    <img id="logo" src="https://vtv1.mediacdn.vn/web_images/logo_2020_2.png" alt="Logo" />
+                </div>
+                <div class="right">
+                    <!-- <a href="#" id="search-button" class="button" onclick="toggleSearch()">Search</a> -->
+
+                    <div style="padding-top: 1px;">
+                        <a href="#" id="search-button" onclick="toggleSearch()">
+                            <img src="image/search.png" alt="Search" class="button">
+                        </a>
+                        <a href="https://www.facebook.com/trung3802" id="fb-button">
+                            <img src="image/fb.png" alt="fb" class="button">
+                        </a>
+
+
+                    </div>
+                    <a href="#" id="watch-button" class="button">English</a>
+                    <a href="#" id="watch-button" class="button">📄 Cổng Thông Tin VTV</a>
+                    <a href="#" id="video-button" class="button">▶ TV & Video</a>
+                    <div id="search-box" style="display: none;">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <button onclick="performSearch()">Tìm</button>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- Tạo menu ngang 2 cấp -->
+            <div id="nav">
+                <ul>
+                    <li>
+                        <a href="index.html" rel="home" title="Trang chủ">
+                            <img src="image/home.png" alt="Trang chủ" />
+                        </a>
+                    </li>
+
+                    <li><a href="chinhtri.html">Chính Trị</a>
+                       
+                    </li>
+                    <li><a href="xahoi.html">Xã Hội</a></li>
+                    <li><a href="phapluat.html">Pháp Luật</a></li>
+                    <li><a href="thegioi.html">Thế Giới</a></li>
+                    <li>
+                        <a href="thethao.html">Thể Thao</a>
+                        
+                    </li>
+                    <li><a href="truyenhinh.html">Truyền Hình</a></li>
+                    <li><a href="kinhte.html">Kinh Tế</a></li>
+                    <li><a href="giaitri.html">Giải Trí</a></li>
+                    <li><a href="giaitri.html">Giáo Dục</a></li>
+                    <li><a href="doisong.html">Đời Sống</a>
+                        <ul style="text-align: center;">
+                            <li><a href="#">Điện Ảnh</a></li>
+                            <li><a href="#">Âm Nhạc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html" rel="home" title="menu">
+                            <img src="image/menu.png" alt="Menu" />
+                        </a>
+                        <ul class="dropdown-menu" style="text-align: center;">
+                            <li><a href="#"> Thể Thao</a></li>
+                            <li><a href="#">Đời sống</a></li>
+                            <li><a href="#">Chính trị</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <!--  xóa hoặc "xóa bỏ" bất kỳ dòng nào của nội dung trước đó mà có float -->
+
+    <div id="container">
+        <div id="scrollToTopBtn" onclick="scrollToTop()">
+            <img src="image/top.png">
+        </div>
+        <div style="display: flex; justify-content: center; border: 1px solid; width: 40%; padding: 10px; margin-left: 190px; margin-top: 15px; margin-bottom: 15px;">
+            <div class="textsearchall">
+                <input id="ten" type="text">
+                <input type="button" value="Tìm kiếm" onclick="checkSearchCondition()">
+                <script>
+                   
+                    function checkSearchCondition() {
+                     var ten = document.getElementById("ten").value;
+
+                       if (ten === "thủ tướng") {
+                            alert("Tìm thấy tin tức");
+                        } else {
+                            alert("Không tìm thấy tin tức");
+                         }
+    }
+                </script>
+                <div>
+                    <p>Tìm kiếm nâng cao</p>
+                </div>
+                <div style="display: flex;">
+                    <div class="giali">
+                        <input type="radio" name="typesearch">
+                        Tin tức
+                    </div>
+                    <div class="giali">
+                        <input type="radio" name="typesearch">
+                        Video
+                    </div>
+                    <div class="giali">
+                        <input type="radio" name="typesearch">
+                        Tất cả
+                    </div>
+                </div>
+            </div>
+        </div>
+                     
+                </div>
+               
+
+        
+
+        
+    <div>
+        <ul>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/4.webp" alt="">
+                </a>
+                <div>
+                    <h3><a href="#">
+                        Thúc đẩy hợp tác Quốc hội Việt Nam - Bồ Đào Nha</a></h3>
+                        <p class="time"><a href="#"></a> &nbsp;&nbsp;&nbsp;
+                    <p class="sapo">VTV.vn - Trong chuyến thăm và làm việc tại Bồ Đào Nha, Phó Chủ tịch Thường trực Quốc hội Trần Thanh Mẫn đã hội kiến Chủ tịch Quốc hội Bồ Đào Nha Augusto Santos Silva.</p>
+
+                </div>
+            </li>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/5.webp">
+                </a>
+                <div>
+                    <h3><a href="#">Hội nghị liên Bộ trưởng Ngoại giao – Kinh tế APEC: Việt Nam đề xuất 3 ưu tiên hợp tác</a></h3>
+                
+                        <span>07/11/2023</span>
+                    </p>
+                    <p class="sapo">VTV.vn - Phát biểu của đoàn Việt Nam được các thành viên chia sẻ, đánh giá cao và được thể hiện trong các văn kiện và Tuyên bố của hội nghị.</p>
+
+                </div>
+            </li>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/6.webp">
+                </a>
+                <div>
+                    <h3><a href="#">Thủ tướng bổ nhiệm nhân sự Bộ Khoa học & Công nghệ và Bộ Quốc phòng</a></h3>
+                   
+                        <span>07/11/2023</span>
+                    </p>
+                    <p class="sapo">VTV.vn - Thủ tướng Chính phủ Phạm Minh Chính ký các Quyết định bổ nhiệm nhân sự Bộ Khoa học và Công nghệ và Bộ Quốc phòng.</p>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/7.webp">
+                </a>
+                <div>
+                    <h3><a href="#">Kỷ luật 2 nguyên Chủ tịch UBND tỉnh Quảng Ninh</a></h3>
+                    <p class="time"><a href="#">Văn hóa - Giải trí</a> &nbsp;&nbsp;&nbsp;
+                        <span>07/11/2023</span>
+                    </p>
+                    <p class="sapo">VTV.vn - Phó Thủ tướng Trần Lưu Quang đã ký các Quyết định của Thủ tướng Chính phủ thi hành kỷ luật đối với 2 nguyên Chủ tịch UBND tỉnh Quảng Ninh.</p>
+
+                </div>
+            </li>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/8.webp" alt="3 thành phố Việt Nam là điểm đến ''du mục kỹ thuật số''">
+                </a>
+                <div>
+                    <h3><a href="#">Từ 18 đến 70 tuổi có thể tham gia lực lượng bảo vệ an ninh, trật tự ở cơ sở'</a></h3>
+                    <p class="time"><a href="#"></a> &nbsp;&nbsp;&nbsp;
+                        <span>07/11/2023</span>
+                    </p>
+                    <p class="sapo">VTV.vn - Dự thảo Luật Lực lượng TGBVANTT đã chỉnh lý quy định tham gia lực lượng là từ đủ 18 – 70 tuổi, nếu từ 70 tuổi trở lên mà đảm bảo sức khỏe thì Chủ tịch xã sẽ xem xét.</p>
+
+                </div>
+            </li>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/9.webp" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
+                </a>
+                <div>
+                    <h3><a href="#">"Đổi tên Luật và thẻ CCCD thành Luật Căn cước và thẻ căn cước là phù hợp"</a></h3>
+                    <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
+                        <span>07/11/2023</span>
+                    </p>
+                    <p class="sapo">VTV.vn - Thường trực Ủy ban Quốc phòng an ninh của Quốc hội đề nghị cho sử dụng tên gọi Luật Căn cước và thẻ căn cước như Chính phủ trình.</p>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/10.webp" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
+                </a>
+                <div>
+                    <h3><a href="#">Chủ tịch nước Võ Văn Thưởng đến Hoa Kỳ, bắt đầu tham dự Tuần lễ Cấp cao APEC 2023</a></h3>
+                    <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
+                        <span>07/11/2023</span>
+                    </p>
+                    <p class="sapo">VTV.vn - Chủ tịch nước Võ Văn Thưởng và Phu nhân cùng Đoàn đại biểu Cấp cao Việt Nam đã tới San Francisco, bắt đầu chương trình tham dự Tuần lễ Cấp cao APEC 2023.</p>
+
+                </div>
+            </li>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/11.webp" alt="3 thành phố Việt Nam là điểm đến ''du mục kỹ thuật số''">
+                </a>
+                <div>
+                    <h3><a href="#">Ông Nguyễn Văn Cường giữ chức Phó Tổng Thanh tra Chính phủ</a></h3>
+                    <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
+                        <span>07/11/2023</span>
+                    </p>
+                    <p class="sapo">VTV.vn - Ông Nguyễn Văn Cường (45 tuổi) là cán bộ được đào tạo bài bản, nhiều kinh nghiệm thực tiễn, có trình độ Tiến sĩ Luật Kinh tế, Cử nhân báo chí, Cao cấp lý luận chính trị.</p>
+
+                </div>
+            </li>
+            <li class="tlitem">
+                <a href="#">
+                    <img src="image/blog/12.webp" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
+                </a>
+                <div>
+                    <h3><a href="#">VTV.vn - Chiều ngày 14/11, Thủ tướng Phạm Minh Chính, Trưởng Ban Chỉ đạo Cải cách hành chính (CCHC) của Chính phủ chủ trì phiên họp thứ sáu của Ban Chỉ đạo.</a></h3>
+                    <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
+                        <span>07/11/2023</span>
+                    </p>
+                    <p class="sapo">VTV.vn - Nhiều người hâm mộ quyết định cắm trại trước sân vân động tại Argentina với hy vọng giành được những vị trí đẹp nhất cho buổi biểu diễn của Taylor Swift.</p>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    
+
+    
+
+
+    </div>
+
+    <div style="clear: both"></div>
+
+    <div id="footer">
+
+        <div id="tren">
+            <div style="width: 1140px; height: 340px; margin: 0px auto; color: #FFF; display: flex; ">
+                <div class="info">
+
+                    <ul style="list-style: none">
+                        <li><a href="#">CƠ QUAN CHỦ QUẢN: <b>ĐÀI TRUYỀN HÌNH VIỆT NAM</b></a></li>
+                        <li><a href="#">CƠ QUAN BÁO CHÍ: <b>ÁO ĐIỆN TỬ VTV NEWS</b></a></li>
+                        <li><a href="#">Giấy phép hoạt động báo chí điện tử số 306/GP-BTTTT cấp ngày 22/02/2012.
+                            ® Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản. Ghi rõ nguồn VTV.vn khi phát hành lại thông tin từ website này</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul style="list-style: none">
+                        <li><a href="index.html"><b>Tổng Biên tập: Vũ Thanh Thủy</b></a></li>
+                        <li><a href="SanPham.html"><b>Phó Tổng Biên tập: Phạm Quốc Thắng</b></a></li>
+                        <li><a href="GioiThieu.html">Tổng đài VTV: (024) 3.8355931; (024) 3.8355932</a></li>
+                        <li><a href="TinTuc.html">Ðiện thoại Báo điện tử VTV: (024) 66897 897</a></li>
+                        <li><a href="KhuyenMai.html">Email: toasoan @ vtv.vn</a></li>
+                        <li><a href="LienHe.html">Liên hệ quảng cáo: 0794 46 33 33 - 0961 98 43 88</a></li>
+                        <li><a href="#">Chính Sách</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul style="list-style: none">
+                        <li><a href="#">VFC</a></li>
+                        <li><a href="#">VTVVTC</a></li>
+                        <li><a href="#">CTV</a></li>
+                        <li><a href="#">K+</a></li>
+                        <li><a href="#">TVAd</a></li>
+                        <li><a href="#">SCTV</a></li>
+                        <li><a href="#">VTVCab</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div id="duoi">
+                <div id="copyright">
+                    <span>@ Bản quyền thuộc về VTV</span>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

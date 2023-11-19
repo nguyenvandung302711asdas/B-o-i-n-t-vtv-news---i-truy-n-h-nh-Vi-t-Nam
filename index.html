@@ -13,16 +13,17 @@
         <div style="width: 1140px; height: 100px;  margin: 0px auto; position: relative">
             <div>
                 <div class="left" style="position: relative;">
-                    <img id="logo" src="https://vtv1.mediacdn.vn/web_images/logo_2020_2.png" alt="Logo" />
+                    <img id="logo" src="https://vtv1.mediacdn.vn/web_images/logo_2020_2.png" alt="Logo " hr />
+                    <a  href="index.html"  id="logo" src="https://vtv1.mediacdn.vn/web_images/logo_2020_2.png" alt="Logo "></a>
                 </div>
                 <div class="right">
                     <!-- <a href="#" id="search-button" class="button" onclick="toggleSearch()">Search</a> -->
 
                     <div style="padding-top: 1px;">
                         <a href="#" id="search-button" onclick="toggleSearch()">
-                            <img src="image/search.png" alt="Search" class="button">
+                            <img id="anh" src="image/search.png" alt="Search" class="button">
                         </a>
-                        <a href="https://www.facebook.com/trung3802" id="fb-button">
+                        <a href="https://www.facebook.com/BoMonCNTTUTCHCMC" id="fb-button">
                             <img src="image/fb.png" alt="fb" class="button">
                         </a>
 
@@ -31,10 +32,28 @@
                     <a href="#" id="watch-button" class="button">English</a>
                     <a href="#" id="watch-button" class="button">📄 Cổng Thông Tin VTV</a>
                     <a href="chitiet2.html" id="video-button" class="button">▶ TV & Video</a>
+    
+                    
                     <div id="search-box" style="display: none;">
-                        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm">
                         <button onclick="performSearch()">Tìm</button>
                     </div>
+                    
+                    <script>
+                       
+                        function performSearch() {
+                            var searchTerm = document.querySelector("#search-input").value.trim();
+                    
+                            // Check if the search term is not empty
+                            if (searchTerm !== "" && searchTerm =="chính trị") {
+                                window.location.href = "search.html?searchTerm=" + encodeURIComponent(searchTerm);
+                            } else {
+                                alert("Không tìm thấy trang! Vui lòng nhập từ khóa tìm kiếm.");
+                            }
+                            
+                        }
+                    </script>
+                    
 
 
 
@@ -56,17 +75,12 @@
                     </li>
 
                     <li><a href="chinhtri.html">Chính Trị</a>
-                        <ul>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                        </ul>
+                        
                     </li>
                     <li><a href="xahoi.html">Xã Hội</a></li>
                     <li><a href="phapluat.html">Pháp Luật</a></li>
                     <li><a href="thegioi.html">Thế Giới</a></li>
-                    <li>
+                    <li style="text-align: center;">
                         <a href="thethao.html">Thể Thao</a>
                         <ul>
                             <li><a href="#">Bóng Đá</a></li>
@@ -79,7 +93,7 @@
                     <li><a href="giaitri.html">Giải Trí</a></li>
                     <li><a href="giaoduc.html">Giáo Dục</a></li>
                     <li><a href="doisong.html">Đời Sống</a>
-                        <ul>
+                        <ul style="text-align: center;">
                             <li><a href="#">Điện Ảnh</a></li>
                             <li><a href="#">Âm Nhạc</a></li>
                         </ul>
@@ -88,10 +102,10 @@
                         <a href="index.html" rel="home" title="menu">
                             <img src="image/menu.png" alt="Menu" />
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
+                        <ul class="dropdown-menu" style="text-align: center;">
+                            <li><a href="#">Đời sống</a></li>
+                            <li><a href="#">Bản tin</a></li>
+                            <li><a href="#">Du lich</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -115,18 +129,20 @@
         <div class="h-title">
             <div class="hs-title">
 
-                <ul class="th-title">
+                <ul class="th-title" >
+                    
                     <li class="sprite">&nbsp;</li>
 
 
-                    <li><a href="#" title="Thi đua ái quốc">#Thi đua ái quốc</a></li>
+                    <li><a href="#" title="Thi đua ái quốc" style="border: 1px solid black;">#Thi đua ái quốc</a></li>
 
-                    <li><a href="#" title="Chống tin giả, tin xấu độc">#Chống tin giả, tin xấu độc</a></li>
+                    <li><a href="#" title="Chống tin giả, tin xấu độc" style="border: 1px solid black;">#Chống tin giả, tin xấu độc</a></li>
 
-                    <li><a href="#" title="Lừa đảo trên không gian mạng">#Lừa đảo trên không gian mạng</a></li>
+                    <li><a hr
+                        ef="#" title="Lừa đảo trên không gian mạng" style="border: 1px solid black;">#Lừa đảo trên không gian mạng</a></li>
                     <li class="duongdaynong">
                         <div class="square-container">
-                            Đường dây nóng :<b>0988 671 671</b>
+                            Đường dây nóng :<b style="color: red;">0988 671 671</b>
                         </div>
                     </li>
                 </ul>
@@ -142,7 +158,7 @@
                                 <a href="#">
                                     <img src="image/blog/7.jpg" alt="Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long">
                                 </a>
-                                <h3><a href="#">Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long</a></h3>
+                                <h3><a href="#">3 dấu ấn của Việt Nam với tiến trình APEC</a></h3>
                             </li>
                             <li class="swiper-slide">
                                 <a href="#">
@@ -216,7 +232,7 @@
                     <img src="image/2.png" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
                 </a>
                 <div>
-                    <h3><a href="#">Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra</a></h3>
+                    <h3><a href="#">Việc tử tế: Kim cương tươi đẹp - gia đình của những em nhỏ "xương thủy tinh"</a></h3>
                     <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
                         <span>07/11/2023</span>
                     </p>
@@ -229,7 +245,7 @@
                     <img src="https://vtv1.mediacdn.vn/zoom/256_159/562122370168008704/2023/11/7/photo1699367705438-16993677057891255352197.png" alt="3 thành phố Việt Nam là điểm đến ''du mục kỹ thuật số''">
                 </a>
                 <div>
-                    <h3><a href="#">3 thành phố Việt Nam là điểm đến ''du mục kỹ thuật số''</a></h3>
+                    <h3><a href="#">Kiên Giang ký kết hợp tác tìm kiếm hài cốt liệt sĩ với 4 tỉnh thuộc Campuchia</a></h3>
                     <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
                         <span>07/11/2023</span>
                     </p>
@@ -242,7 +258,7 @@
                     <img src="https://vtv1.mediacdn.vn/zoom/256_159/562122370168008704/2023/11/6/photo1699242063815-1699242064006961998500.png" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
                 </a>
                 <div>
-                    <h3><a href="#">Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra</a></h3>
+                    <h3><a href="#">Thu phí dịch vụ sử dụng nhà ga cảng biển tại huyện Côn Đảo</a></h3>
                     <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
                         <span>07/11/2023</span>
                     </p>
@@ -267,7 +283,7 @@
                 </div>
                 <div class="noibat1_info">
                     <h2>
-                        <a href="#">Thủ tướng: Chúng ta đã làm được những điều tưởng như không thể</a>
+                        <a href="#">Hà Nội: Rà soát ngay toàn bộ quá trình tổ chức đấu giá quyền khai thác khoáng sản ở 3 mỏ cát</a>
                     </h2>
                     <p class="sapo">VTV.vn -Theo Thủ tướng, điều quan trọng trong phòng chống dịch COVID-19 là chúng đã đoàn kết, thống nhất trên dưới một lòng, mang lại bình yên cho nhân dân, đưa đất nước tiếp tục phát triển.</p>
                 </div>
@@ -280,13 +296,13 @@
                             <a href="#">
                                 <img src="image/blog/7.jpg" alt="Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long">
                             </a>
-                            <h3><a href="#">Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long</a></h3>
+                            <h3><a href="#">Khánh Hòa phát động tháng hành động vì bình đẳng giới năm 2023</a></h3>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide">       
                             <a href="#">
                                 <img src="image/blog/6.jpg" alt="Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long">
                             </a>
-                            <h3><a href="#">Bộ trưởng Khoa học &amp; Công nghệ trả lời về dự án của Đỗ Gia Capital tại vịnh Hạ Long</a></h3>
+                            <h3><a href="#">Công điện: Tập trung ứng phó, khắc phục hậu quả mưa lũ tại khu vực Trung Bộ</a></h3>
                         </li>
                     </ul>
 
@@ -305,7 +321,7 @@
                     <img src="image/blog/3.jpg" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
                 </a>
                 <div>
-                    <h3><a href="#">Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra</a></h3>
+                    <h3><a href="#">Tiến độ dự án cải tạo kênh rạch phụ thuộc vào sự đồng thuận của người dân</a></h3>
                     <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
                         <span>07/11/2023</span>
                     </p>
@@ -318,7 +334,7 @@
                     <img src="image/blog/2.jpg" alt="3 thành phố Việt Nam là điểm đến ''du mục kỹ thuật số''">
                 </a>
                 <div>
-                    <h3><a href="#">3 thành phố Việt Nam là điểm đến ''du mục kỹ thuật số''</a></h3>
+                    <h3><a href="#">Môi trường sống ô nhiễm ở một xã thuộc Hà Nội có hơn 300 ca mắc sốt xuất huyết từ đầu năm 2023</a></h3>
                     <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
                         <span>07/11/2023</span>
                     </p>
@@ -328,14 +344,14 @@
             </li>
             <li class="tlitem">
                 <a href="#">
-                    <img src="image/blog/1.jpg" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
+                    <img src="image/blog/4.jpg" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
                 </a>
                 <div>
-                    <h3><a href="#">Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra</a></h3>
+                    <h3><a href="#">Chủ tịch nước Võ Văn Thưởng gặp gỡ, trao đổi với Liên minh Doanh nghiệp Hoa Kỳ - APEC</a></h3>
                     <p class="time"><a href="#">Văn hóa - Giải trí</a> -&nbsp;&nbsp;&nbsp;
                         <span>07/11/2023</span>
                     </p>
-                    <p class="sapo">VTV.vn - Nhiều người hâm mộ quyết định cắm trại trước sân vân động tại Argentina với hy vọng giành được những vị trí đẹp nhất cho buổi biểu diễn của Taylor Swift.</p>
+                    <p class="sapo">VTV.vn - Việt Nam đang nỗ lực không ngừng trong cải thiện môi trường đầu tư, tạo điều kiện thuận lợi hơn cho các doanh nghiệp nước ngoài nói chung, doanh nghiệp Hoa Kỳ nói riêng.</p>
 
                 </div>
             </li>
@@ -401,31 +417,31 @@
             <a><b>Cà Phê Sáng VTV</b></a>
         </div>
         <div class="vd-item">
-            <a><img id="anh-vd" src="image/thoisu/1.jpg" /></a>
+            <a><img id="anh-vd" src="image/blog/11.webp" /></a>
             <div id="vd-info">
                 <a href="#" id="vd-name">Thời sự 19h VTV1 - 07/11/2023</a><br />
             </div>
         </div>
         <div class="vd-item">
-            <a><img id="anh-vd" src="image/thoisu/2.jpg" /></a>
+            <a><img id="anh-vd" src="image/blog/118.jpg" /></a>
             <div id="vd-info">
                 <a href="#" id="vd-name">Thời sự 19h VTV1 - 07/11/2023</a><br />
             </div>
         </div>
         <div class="vd-item">
-            <a><img id="anh-vd" src="image/thoisu/3.jpg" /></a>
+            <a><img id="anh-vd" src="image/blog/13.webp" /></a>
             <div id="vd-info">
                 <a href="#" id="vd-name">Thời sự 19h VTV1 - 07/11/2023</a><br />
             </div>
         </div>
         <div class="vd-item">
-            <a><img id="anh-vd" src="image/thoisu/4.jpg" /></a>
+            <a><img id="anh-vd" src="image/blog/2.webp" /></a>
             <div id="vd-info">
                 <a href="#" id="vd-name">Thời sự 19h VTV1 - 07/11/2023</a><br />
             </div>
         </div>
         <div class="vd-item">
-            <a><img id="anh-vd" src="image/thoisu/5.jpg" /></a>
+            <a><img id="anh-vd" src="image/blog/25.webp" /></a>
             <div id="vd-info">
                 <a href="#" id="vd-name">Thời sự 19h VTV1 - 07/11/2023</a><br />
             </div>
@@ -487,48 +503,48 @@
 
     <div id="mostviewlefts">
         <div class="mostviewleft">
-            <div class="title_box"><a><span class="sprite star"></span>ĐỌC NHIỀU</a></div>
+            <div class="title_box"><a><span class="sprite star"></span><b style="color:#da2c2c">ĐỌC NHIỀU</b></a></div>
             <ul>
 
                 <li class="itemimg">
                     <div>
-                        <span class="stt">01</span>
+                        <span class="stt" style="color: #da2c2c;">01</span>
                     </div>
                     <h4 class="fl"><a href="chitiet.html">Cuộc chiến không giới tuyến - Tập 39: Đồn phó Quang hy sinh trong trận đánh cuối cùng<span class="sprite icon_type_video"></span></a></h4>
                     <a href="@" title="Cuộc chiến không giới tuyến - Tập 39: Đồn phó Quang hy sinh trong trận đánh cuối cùng" class="avatar">
-                        <img src="image/blog/2.jpg" alt="Cuộc chiến không giới tuyến - Tập 39: Đồn phó Quang hy sinh trong trận đánh cuối cùng"></a>
+                        <img src="image/blog/8.webp" alt="Cuộc chiến không giới tuyến - Tập 39: Đồn phó Quang hy sinh trong trận đánh cuối cùng"></a>
                 </li>
                 
 
                 <li class="itemimg">
                     <div>
-                        <span class="stt">02</span>
+                        <span class="stt" style="color: #da2c2c;">02</span>
                     </div>
                     <h4 class="fl"><a href="chitiet.html">Cuộc chiến không giới tuyến - Tập 39: Đồn phó Quang hy sinh trong trận đánh cuối cùng<span class="sprite icon_type_video"></span></a></h4>
                     <a href="@" title="Cuộc chiến không giới tuyến - Tập 39: Đồn phó Quang hy sinh trong trận đánh cuối cùng" class="avatar">
-                        <img src="image/blog/1.jpg" alt="Cuộc chiến không giới tuyến - Tập 39: Đồn phó Quang hy sinh trong trận đánh cuối cùng"></a>
+                        <img src="image/blog/7.webp" alt="Cuộc chiến không giới tuyến - Tập 39: Đồn phó Quang hy sinh trong trận đánh cuối cùng"></a>
                 </li>
                 <li class="itemimg">
                     <div>
-                        <span class="stt">03</span>
+                        <span class=" stt" style="color: #da2c2c;">03</span>
                     </div>
                     <h4 class="fl"><a href="chitiet.html">Phát hiện mẫu cá khoai dương tính với formol khi test nhanh tại Quảng Bình<span class="sprite icon_type_video"></span></a></h4>                    
                 </li>
                 <li class="itemimg">
                     <div>
-                        <span class="stt">04</span>
+                        <span class="stt" style="color: #da2c2c;">04</span>
                     </div>
                     <h4 class="fl"><a href="chitiet.html">FED được dự báo giảm lãi suất liên tục từ năm 2024<span class="sprite icon_type_video"></span></a></h4>                    
                 </li>
                 <li class="itemimg">
                     <div>
-                        <span class="stt">05</span>
+                        <span class="stt" style="color: #da2c2c;">05</span>
                     </div>
                     <h4 class="fl"><a href="chitiet.html">Ghi lại hình cực quang từ buồng lái máy bay<span class="sprite icon_type_video"></span></a></h4>                    
                 </li>
                 <li class="itemimg">
                     <div>
-                        <span class="stt">06</span>
+                        <span class="stt" style="color: #da2c2c;">06</span>
                     </div>
                     <h4 class="fl"><a href="chitiet.html">Gía tăng vọt<span class="sprite icon_type_video"></span></a></h4>                    
                 </li>
@@ -537,13 +553,13 @@
         </div>
         <div class="mostviewright">
             <div class="title_box mgb20">
-                <a><i class="sprite"></i>CŨ MÀ HAY</a>
+                <a><i class="sprite"></i><b style="color: red;">CŨ MÀ HAY</b></a>
             </div>
             <ul style="overflow: hidden;">
 
                 <li data-boxtype="oldbutgood">
                     <a href="#">
-                        <img src="image/blog/1.jpg" alt="Dòng vốn cho nền kinh tế: Tắc nghẽn hay bị đắp đập be bờ?">
+                        <img src="image/blog/10.webp" alt="Dòng vốn cho nền kinh tế: Tắc nghẽn hay bị đắp đập be bờ?">
 
                     </a>
                     <h3><a class="stitle" href="#">Dòng vốn cho nền kinh tế: Tắc nghẽn hay bị đắp đập be bờ?</a></h3>
@@ -564,7 +580,7 @@
         <ul>
             <li class="tlitem">
                 <a href="#">
-                    <img src="image/2.png" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
+                    <img src="image/blog/1.webp" alt="Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra">
                 </a>
                 <div>
                     <h3><a href="#">Người hâm mộ của Taylor Swift xếp hàng trước 5 tháng, chờ concert diễn ra</a></h3>
